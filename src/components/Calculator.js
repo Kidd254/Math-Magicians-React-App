@@ -8,6 +8,7 @@ function Calculator() {
         flexDirection: 'column',
         width: 400,
         height: 'auto',
+        backgroundColor: 'gray',
       }}
     >
       <div
@@ -15,9 +16,13 @@ function Calculator() {
           display: 'flex',
           height: 50,
           flex: 1,
+          marginLeft: 'auto',
         }}
+
       >
+
         <Display numberParent={0} />
+
       </div>
       <div className="calc-numbers">
         <div
