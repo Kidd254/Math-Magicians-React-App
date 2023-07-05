@@ -1,8 +1,6 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import calculate from '../logic/calculate';
-import OrangeBtn from './OrangeButton';
-import GrayBtn from './GrayButton';
 import GrayButton from './GrayButton';
 import OrangeButton from './OrangeButton';
 
