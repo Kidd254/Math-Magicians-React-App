@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-
+import calculate from '../logic/calculate';
 function Calculator() {
   return (
     <div
