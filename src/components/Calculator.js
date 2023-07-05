@@ -3,6 +3,8 @@ import { useState } from 'react';
 import calculate from '../logic/calculate';
 import OrangeBtn from './OrangeButton';
 import GrayBtn from './GrayButton';
+import GrayButton from './GrayButton';
+import OrangeButton from './OrangeButton';
 
 function Calculator() {
   const [calculator, setCalculator] = useState(
@@ -59,10 +61,10 @@ function Calculator() {
           }}
           className="line"
         >
-          <GrayBtn string="AC" clickCalc={clickCalc} />
-          <GrayBtn string="+/-" clickCalc={clickCalc} />
-          <GrayBtn string="%" clickCalc={clickCalc} />
-          <OrangeBtn string="÷" first clickCalc={clickCalc} />
+          <GrayButton string="AC" clickCalc={clickCalc} />
+          <GrayButton string="+/-" clickCalc={clickCalc} />
+          <GrayButton string="%" clickCalc={clickCalc} />
+          <OrangeButton string="÷" first clickCalc={clickCalc} />
         </div>
         <div
           style={{
@@ -72,10 +74,10 @@ function Calculator() {
           }}
           className="line"
         >
-          <GrayBtn string="7" clickCalc={clickCalc} />
-          <GrayBtn string="8" clickCalc={clickCalc} />
-          <GrayBtn string="9" clickCalc={clickCalc} />
-          <OrangeBtn string="x" clickCalc={clickCalc} />
+          <GrayButton string="7" clickCalc={clickCalc} />
+          <GrayButton string="8" clickCalc={clickCalc} />
+          <GrayButton string="9" clickCalc={clickCalc} />
+          <OrangeButton string="x" clickCalc={clickCalc} />
         </div>
         <div
           style={{
@@ -85,10 +87,10 @@ function Calculator() {
           }}
           className="line"
         >
-          <GrayBtn string="4" clickCalc={clickCalc} />
-          <GrayBtn string="5" clickCalc={clickCalc} />
-          <GrayBtn string="6" clickCalc={clickCalc} />
-          <OrangeBtn string="-" clickCalc={clickCalc} />
+          <GrayButton string="4" clickCalc={clickCalc} />
+          <GrayButton string="5" clickCalc={clickCalc} />
+          <GrayButton string="6" clickCalc={clickCalc} />
+          <OrangeButton string="-" clickCalc={clickCalc} />
         </div>
         <div
           style={{
@@ -98,10 +100,10 @@ function Calculator() {
           }}
           className="line"
         >
-          <GrayBtn string="1" clickCalc={clickCalc} />
-          <GrayBtn string="2" clickCalc={clickCalc} />
-          <GrayBtn string="3" clickCalc={clickCalc} />
-          <OrangeBtn string="+" clickCalc={clickCalc} />
+          <GrayButton string="1" clickCalc={clickCalc} />
+          <GrayButton string="2" clickCalc={clickCalc} />
+          <GrayButton string="3" clickCalc={clickCalc} />
+          <OrangeButton string="+" clickCalc={clickCalc} />
         </div>
         <div
           style={{
@@ -111,9 +113,9 @@ function Calculator() {
           }}
           className="line"
         >
-          <GrayBtn string="0" clickCalc={clickCalc} big />
-          <GrayBtn string="." clickCalc={clickCalc} />
-          <OrangeBtn string="=" clickCalc={clickCalc} />
+          <GrayButton string="0" clickCalc={clickCalc} big />
+          <GrayButton string="." clickCalc={clickCalc} />
+          <OrangeButton string="=" clickCalc={clickCalc} />
         </div>
       </div>
     </div>
