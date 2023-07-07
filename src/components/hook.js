@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import '../index.css';
 
 function DisplayQuotes() {
   const [data, setData] = useState([]);
@@ -49,7 +50,8 @@ function DisplayQuotes() {
   return (
     <ul style={{
       listStyle: 'none',
-      fontWeight: 'bolder',
+      fontFamily: 'YsabeauOffice-BlackItalic.ttf',
+      width: 400,
     }}
     >
       {data.map((quote) => (
