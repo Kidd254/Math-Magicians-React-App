@@ -1,0 +1,21 @@
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 30px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 28px;
+  padding: 0 60px;
+}
+
+p {
+  padding: 0 60px;
+  text-align: justify;
+}
