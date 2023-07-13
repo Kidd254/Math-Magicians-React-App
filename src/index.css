@@ -1,13 +1,14 @@
 @font-face {
   font-family: 'YsabeauOffice';
-  src: url('./fonts/YsabeauOffice-BlackItalic.ttf') format('ttf'),
-  url('./fonts/YsabeauOffice-Black.ttf') format('ttf'),
-  url('./fonts/YsabeauOffice-Bold.ttf') format('ttf'),
-  url('./fonts/YsabeauOffice-ExtraBoldItalic.ttf') format('ttf'),
-  url('./fonts/YsabeauOffice-Medium.ttf') format('ttf'),
-  url('./fonts/YsabeauOffice-Regular.ttf') format('ttf');
-  
+  src:
+    url('./fonts/YsabeauOffice-BlackItalic.ttf') format('ttf'),
+    url('./fonts/YsabeauOffice-Black.ttf') format('ttf'),
+    url('./fonts/YsabeauOffice-Bold.ttf') format('ttf'),
+    url('./fonts/YsabeauOffice-ExtraBoldItalic.ttf') format('ttf'),
+    url('./fonts/YsabeauOffice-Medium.ttf') format('ttf'),
+    url('./fonts/YsabeauOffice-Regular.ttf') format('ttf');
 }
+
 body {
   margin: 0;
   font-family:
