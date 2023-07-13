@@ -31,93 +31,108 @@ function Calculator() {
   };
 
   return (
-
     <div
       style={{
         display: 'flex',
-        flexDirection: 'column',
-        width: 400,
-        height: 'auto',
-        paddingLeft: 700,
       }}
     >
-      {' '}
-      <p>Lets do some math!</p>
+      <p
+        style={{
+          paddingLeft: 100,
+          fontWeight: 'bolder',
+        }}
+      >
+        Lets do some math!
+
+      </p>
       <div
         style={{
           display: 'flex',
-          height: 50,
-          flex: 1,
+          flexDirection: 'column',
+          width: 500,
+          height: 'auto',
+          paddingLeft: 500,
         }}
       >
-        <Display
-          numberParent={displayNumber}
-        />
-      </div>
-      <div className="calc-numbers">
+
+        {' '}
+
         <div
           style={{
-            flex: 1,
-            flexDirection: 'row',
             display: 'flex',
+            height: 50,
+            flex: 1,
           }}
-          className="line"
         >
-          <GrayButton string="AC" clickCalc={clickCalc} />
-          <GrayButton string="+/-" clickCalc={clickCalc} />
-          <GrayButton string="%" clickCalc={clickCalc} />
-          <OrangeButton string="÷" first clickCalc={clickCalc} />
+          <Display
+            numberParent={displayNumber}
+          />
         </div>
-        <div
-          style={{
-            flex: 1,
-            flexDirection: 'row',
-            display: 'flex',
-          }}
-          className="line"
-        >
-          <GrayButton string="7" clickCalc={clickCalc} />
-          <GrayButton string="8" clickCalc={clickCalc} />
-          <GrayButton string="9" clickCalc={clickCalc} />
-          <OrangeButton string="x" clickCalc={clickCalc} />
-        </div>
-        <div
-          style={{
-            flex: 1,
-            flexDirection: 'row',
-            display: 'flex',
-          }}
-          className="line"
-        >
-          <GrayButton string="4" clickCalc={clickCalc} />
-          <GrayButton string="5" clickCalc={clickCalc} />
-          <GrayButton string="6" clickCalc={clickCalc} />
-          <OrangeButton string="-" clickCalc={clickCalc} />
-        </div>
-        <div
-          style={{
-            flex: 1,
-            flexDirection: 'row',
-            display: 'flex',
-          }}
-          className="line"
-        >
-          <GrayButton string="1" clickCalc={clickCalc} />
-          <GrayButton string="2" clickCalc={clickCalc} />
-          <GrayButton string="3" clickCalc={clickCalc} />
-          <OrangeButton string="+" clickCalc={clickCalc} />
-        </div>
-        <div
-          style={{
-            flex: 1,
-            flexDirection: 'row',
-            display: 'flex',
-          }}
-          className="line"
-        >
-          <GrayButton string="0" clickCalc={clickCalc} big />
-          <GrayButton string="." clickCalc={clickCalc} />
-          <OrangeButton string="=" clickCalc={clickCalc} />
+        <div className="calc-numbers">
+          <div
+            style={{
+              flex: 1,
+              flexDirection: 'row',
+              display: 'flex',
+            }}
+            className="line"
+          >
+            <GrayButton string="AC" clickCalc={clickCalc} />
+            <GrayButton string="+/-" clickCalc={clickCalc} />
+            <GrayButton string="%" clickCalc={clickCalc} />
+            <OrangeButton string="÷" first clickCalc={clickCalc} />
+          </div>
+          <div
+            style={{
+              flex: 1,
+              flexDirection: 'row',
+              display: 'flex',
+            }}
+            className="line"
+          >
+            <GrayButton string="7" clickCalc={clickCalc} />
+            <GrayButton string="8" clickCalc={clickCalc} />
+            <GrayButton string="9" clickCalc={clickCalc} />
+            <OrangeButton string="x" clickCalc={clickCalc} />
+          </div>
+          <div
+            style={{
+              flex: 1,
+              flexDirection: 'row',
+              display: 'flex',
+            }}
+            className="line"
+          >
+            <GrayButton string="4" clickCalc={clickCalc} />
+            <GrayButton string="5" clickCalc={clickCalc} />
+            <GrayButton string="6" clickCalc={clickCalc} />
+            <OrangeButton string="-" clickCalc={clickCalc} />
+          </div>
+          <div
+            style={{
+              flex: 1,
+              flexDirection: 'row',
+              display: 'flex',
+            }}
+            className="line"
+          >
+            <GrayButton string="1" clickCalc={clickCalc} />
+            <GrayButton string="2" clickCalc={clickCalc} />
+            <GrayButton string="3" clickCalc={clickCalc} />
+            <OrangeButton string="+" clickCalc={clickCalc} />
+          </div>
+          <div
+            style={{
+              flex: 1,
+              flexDirection: 'row',
+              display: 'flex',
+            }}
+            className="line"
+          >
+            <GrayButton string="0" clickCalc={clickCalc} big />
+            <GrayButton string="." clickCalc={clickCalc} />
+            <OrangeButton string="=" clickCalc={clickCalc} />
+          </div>
         </div>
       </div>
     </div>
@@ -143,6 +158,7 @@ function Display(props) {
     >
       {numberParent}
     </div>
+
   );
 }
 
