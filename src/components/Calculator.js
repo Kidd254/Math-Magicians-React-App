@@ -31,14 +31,18 @@ function Calculator() {
   };
 
   return (
+
     <div
       style={{
         display: 'flex',
         flexDirection: 'column',
         width: 400,
         height: 'auto',
+        paddingLeft: 700,
       }}
     >
+      {' '}
+      <p>Lets do some math!</p>
       <div
         style={{
           display: 'flex',

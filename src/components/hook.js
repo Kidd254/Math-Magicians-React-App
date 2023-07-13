@@ -52,10 +52,15 @@ function DisplayQuotes() {
       listStyle: 'none',
       fontFamily: 'YsabeauOffice-BlackItalic.ttf',
       width: 400,
+      display: 'flex',
+      flexDirection: 'row',
+      justifyContent: 'center',
+      alignItems: 'center',
     }}
     >
       {data.map((quote) => (
         <li
+          style={{ fontSize: 32, color: '#7e7e7e' }}
           key={quote.id}
         >
 
