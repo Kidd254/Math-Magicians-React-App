@@ -1,12 +1,10 @@
 import './App.css';
-import Calculator from './components/Calculator';
-import DisplayQuotes from './components/hook';
+import RouterNav from './Router';
 
 function App() {
   return (
     <section>
-      <Calculator />
-      <DisplayQuotes />
+      <RouterNav />
     </section>
   );
 }
