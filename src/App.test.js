@@ -5,17 +5,17 @@ import RouterNav from './Router';
 import calculate from './logic/calculate';
 import operate from './logic/operate';
 
-test('Test if RouterNav is well build', () => {
+test('Test if RouterNav works perfectly', () => {
   render(<RouterNav />);
   expect(screen.getByText('Math Magicians')).toBeInTheDocument();
 });
 
-test('Test if Calculator is well build', () => {
+test('Test if Calculator page shows the expected text', () => {
   render(<Calculator />);
   expect(screen.getByText('Lets do some math!')).toBeInTheDocument();
 });
 
-test('Test if Home is well build', () => {
+test('Test if Home if home page shows expected page', () => {
   render(<Home />);
   expect(screen.getByText('Welcome to our main page!')).toBeInTheDocument();
 });
@@ -43,7 +43,7 @@ describe('Calculate module', () => {
     expect(calculate(cal, '=').total).toBe('10');
   });
 
-  test('Clear values', () => {
+  test('remove values from screen', () => {
     const obj = {
       total: 1,
       next: 1,
@@ -63,7 +63,7 @@ describe('Calculate module', () => {
     expect(calculate(cal, '=').total).toBe('2');
   });
 
-  test('Test calculator and operator divition n1: 6 ÷ n2: 3', () => {
+  test('Test calculator and operator division n1: 6 ÷ n2: 3', () => {
     const cal = {
       next: '3',
       total: '6',
@@ -90,7 +90,6 @@ describe('Calculate module', () => {
     expect(calculate(cal, '=').total).toBe('3');
   });
 });
-
 // testa for operate .js
 
 describe('Operate module', () => {
@@ -112,7 +111,7 @@ describe('Operate module', () => {
     expect(operate(cal.next, cal.total, cal.operation)).toBe('2');
   });
 
-  test('Test operate divition n1: 6 ÷ n2: 3', () => {
+  test('Test operate division n1: 6 ÷ n2: 3', () => {
     const cal = {
       next: '6',
       total: '3',
