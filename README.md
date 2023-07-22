@@ -8,6 +8,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+    - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -49,7 +50,13 @@
 - [x] Remove the boilerplate from the project after setting up💯.
 - [x] Use the basic CSS style for styling the components.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [a link to the online version](https://lawrences-math-magicians-react-app-iy4q.onrender.com/)
+
+- [a link to a presentation about this project]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
