@@ -24,7 +24,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Math__magicians] <a name="about-project"></a>
+# 📖 [Math Magicians] <a name="about-project"></a>
 
 > This is a math magician's app built with HTML, CSS, and REACT in this app you can make some calculations math like addition and division..etc, also I used the external API to fetch some quotes for the app using the use effect hook.
 
@@ -114,7 +114,7 @@ npx eslint . --fix
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Lawrence Kioko**
+👤 **Lawrence Muema Kioko**
 - GitHub: [@githubhandle](https://github.com/Kidd254)
 - Twitter: [@twitterhandle](https://twitter.com/lawrenc98789206)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/lawrence-muema-kioko-972035240/)
