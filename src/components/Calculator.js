@@ -5,13 +5,11 @@ import GrayButton from './GrayButton';
 import OrangeButton from './OrangeButton';
 
 function Calculator() {
-  const [calculator, setCalculator] = useState(
-    {
-      total: null,
-      next: null,
-      operation: null,
-    },
-  );
+  const [calculator, setCalculator] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
 
   const [displayNumber, setDisplayNumber] = useState('0');
 
@@ -24,6 +22,7 @@ function Calculator() {
     }
     return setDisplayNumber('0');
   };
+
   const clickCalc = (value) => {
     const newCalculator = calculate(calculator, value);
     setCalculator(newCalculator);
@@ -31,104 +30,34 @@ function Calculator() {
   };
 
   return (
-    <div
-      style={{
-        display: 'flex',
-      }}
-    >
-      <p
-        style={{
-          paddingLeft: 100,
-          fontWeight: 'bolder',
-        }}
-      >
-        Lets do some math!
-
-      </p>
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          width: 500,
-          height: 'auto',
-          paddingLeft: 500,
-        }}
-      >
-
-        {' '}
-
-        <div
-          style={{
-            display: 'flex',
-            height: 50,
-            flex: 1,
-          }}
-        >
-          <Display
-            numberParent={displayNumber}
-          />
-        </div>
-        <div className="calc-numbers">
-          <div
-            style={{
-              flex: 1,
-              flexDirection: 'row',
-              display: 'flex',
-            }}
-            className="line"
-          >
+    <div className="container mx-auto p-4">
+      <p className="text-2xl font-bold mb-4">Let&apos;s do some math!</p>
+      <div className="mx-auto grid grid-cols-2 gap-4">
+        <div className="w-full p-4 border rounded-lg bg-gray-800 text-white">
+          <div className="flex items-center justify-end h-16">
+            <Display numberParent={displayNumber} />
+          </div>
+          <div className="grid grid-cols-4 gap-2">
             <GrayButton string="AC" clickCalc={clickCalc} />
             <GrayButton string="+/-" clickCalc={clickCalc} />
             <GrayButton string="%" clickCalc={clickCalc} />
             <OrangeButton string="÷" first clickCalc={clickCalc} />
-          </div>
-          <div
-            style={{
-              flex: 1,
-              flexDirection: 'row',
-              display: 'flex',
-            }}
-            className="line"
-          >
+
             <GrayButton string="7" clickCalc={clickCalc} />
             <GrayButton string="8" clickCalc={clickCalc} />
             <GrayButton string="9" clickCalc={clickCalc} />
             <OrangeButton string="x" clickCalc={clickCalc} />
-          </div>
-          <div
-            style={{
-              flex: 1,
-              flexDirection: 'row',
-              display: 'flex',
-            }}
-            className="line"
-          >
+
             <GrayButton string="4" clickCalc={clickCalc} />
             <GrayButton string="5" clickCalc={clickCalc} />
             <GrayButton string="6" clickCalc={clickCalc} />
             <OrangeButton string="-" clickCalc={clickCalc} />
-          </div>
-          <div
-            style={{
-              flex: 1,
-              flexDirection: 'row',
-              display: 'flex',
-            }}
-            className="line"
-          >
+
             <GrayButton string="1" clickCalc={clickCalc} />
             <GrayButton string="2" clickCalc={clickCalc} />
             <GrayButton string="3" clickCalc={clickCalc} />
             <OrangeButton string="+" clickCalc={clickCalc} />
-          </div>
-          <div
-            style={{
-              flex: 1,
-              flexDirection: 'row',
-              display: 'flex',
-            }}
-            className="line"
-          >
+
             <GrayButton string="0" clickCalc={clickCalc} big />
             <GrayButton string="." clickCalc={clickCalc} />
             <OrangeButton string="=" clickCalc={clickCalc} />
@@ -142,23 +71,9 @@ function Calculator() {
 function Display(props) {
   const { numberParent } = props;
   return (
-    <div
-      style={{
-        display: 'flex',
-        flex: 1,
-        height: 50,
-        color: 'white',
-        background: 'gray',
-        alignItems: 'center',
-        justifyContent: 'flex-end',
-        boxSizing: 'border-box',
-        paddingRight: 8,
-        paddingLeft: 8,
-      }}
-    >
+    <div className="flex-1 h-12 bg-gray-700 text-white text-right p-2">
       {numberParent}
     </div>
-
   );
 }
 
