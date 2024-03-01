@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import '../index.css';
+import light from '../assets/images/light.jpg'; // Replace with the correct path to your image
 
 function DisplayQuotes() {
   const [data, setData] = useState([]);
@@ -48,30 +49,23 @@ function DisplayQuotes() {
   }
 
   return (
-    <ul style={{
-      listStyle: 'none',
-      fontFamily: 'YsabeauOffice-BlackItalic.ttf',
-      width: 400,
-      display: 'flex',
-      flexDirection: 'row',
-      justifyContent: 'center',
-      alignItems: 'center',
-    }}
-    >
-      {data.map((quote) => (
-        <li
-          style={{ fontSize: 32, color: '#7e7e7e' }}
-          key={quote.id}
-        >
-
-          {quote.quote}
-          {' '}
-          -
-          {' '}
-          {quote.author}
-        </li>
-      ))}
-    </ul>
+    <div className="container mx-auto p-4">
+      <img
+        src={light}
+        alt="Quote"
+        className="w-450 max-h-64 object-cover mx-auto mb-4"
+      />
+      <ul className="list-none text-center">
+        {data.map((quote) => (
+          <li key={quote.id} className="text-lg text-gray-700 mb-4">
+            {quote.quote}
+            {' '}
+            -
+            {quote.author}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
 
